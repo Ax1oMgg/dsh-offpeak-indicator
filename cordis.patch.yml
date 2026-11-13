@@ -1,0 +1,5 @@
+# Bundle patch: mount the Host half. The sidebar row lives in client.js,
+# which the Web runtime loads as a client module.
+- insert:
+    - id: offpeak-indicator
+      name: 'dsh-offpeak-indicator'

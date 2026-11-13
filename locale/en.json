@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Off-peak Token Price",
+    "description": "A sidebar row shows whether DeepSeek tokens are at the off-peak rate right now, with a live countdown to the next switch. On every Harness launch it re-checks the official pricing page and the Chinese public-holiday calendar."
+  }
+}

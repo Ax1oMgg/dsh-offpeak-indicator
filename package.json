@@ -1,0 +1,62 @@
+{
+  "name": "dsh-offpeak-indicator",
+  "version": "1.0.0",
+  "description": "Sidebar indicator for DeepSeek off-peak token pricing: shows whether the discount is active, counts down to the next switch, and verifies the official pricing rule and the Chinese holiday calendar on every Harness launch.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "schedule.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "off-peak",
+    "pricing",
+    "tokens",
+    "sidebar"
+  ],
+  "author": "Ax1oMgg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ax1oMgg/dsh-offpeak-indicator.git"
+  },
+  "homepage": "https://github.com/Ax1oMgg/dsh-offpeak-indicator#readme",
+  "bugs": {
+    "url": "https://github.com/Ax1oMgg/dsh-offpeak-indicator/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/schedule.test.mjs test/client.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
