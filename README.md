@@ -1,5 +1,7 @@
 # dsh-offpeak-indicator
 
+[GitHub](https://github.com/Ax1oMgg/dsh-offpeak-indicator) · MIT
+
 Строка в футере сайдбара DeepSeek Harness, которая отвечает на один вопрос:
 **токены сейчас по льготной цене или по полной?**
 
